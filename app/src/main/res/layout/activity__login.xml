@@ -4,33 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
     tools:context=".Activity_Login">
-
-    <ImageView
-        android:id="@+id/imgview_top"
-        android:layout_width="344dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#03A9F4"
-        app:layout_constraintBottom_toTopOf="@+id/imgview_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="312dp"
-        android:layout_height="27dp"
-        android:text="Usuario existente"
-        android:textColor="#F8FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/imgview_logo"
@@ -41,8 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgview_top"
-        app:srcCompat="@drawable/login" />
+        app:srcCompat="@drawable/login"
+        tools:layout_editor_absoluteY="53dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -131,11 +106,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:onClick=""
         android:text="Recuperar contraseña"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:clickable="true"
-        android:onClick=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"

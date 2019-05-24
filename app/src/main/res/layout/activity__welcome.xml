@@ -4,33 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
     tools:context=".Activity_Welcome">
 
     <ImageView
         android:id="@+id/imgview_logo"
-        android:layout_width="258dp"
-        android:layout_height="305dp"
+        android:layout_width="244dp"
+        android:layout_height="274dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/welcome"
-        tools:layout_editor_absoluteY="73dp" />
-
-    <ImageView
-        android:id="@+id/imgview_top"
-        android:layout_width="342dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#03A9F4"
-        app:layout_constraintBottom_toTopOf="@+id/imgview_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteY="3dp" />
 
     <TextView
         android:id="@+id/tv_cuenta_aviso"
@@ -52,16 +38,15 @@
         android:layout_width="206dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:background="#03A9F4"
+        android:onClick="BtnExiste_Click"
         android:text="Usuario Existente"
         android:textColor="#FCFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgview_logo"
-        android:onClick="BtnExiste_Click"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/imgview_logo" />
 
     <Button
         android:id="@+id/btnAnonimo"
@@ -85,27 +70,17 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:clickable="true"
         android:lineSpacingExtra="30sp"
+        android:onClick="TvNuevaCuenta_Click"
         android:text="Crear una cuenta de Usuario"
         android:textColor="#03A9F4"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        android:clickable="true"
-        android:onClick="TvNuevaCuenta_Click"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_cuenta_aviso"
         app:layout_constraintVertical_bias="0.08" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="300dp"
-        android:layout_height="27dp"
-        android:text="El Recogedor"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="25dp" />
 </android.support.constraint.ConstraintLayout>

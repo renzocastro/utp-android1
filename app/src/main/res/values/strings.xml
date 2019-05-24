@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">utp-android1</string>
+    <string name="activity_login">Usuario Existente</string>
+    <string name="activity_new">Nuevo Usuario</string>
+    <string name="activity_welcome">El Recogedor</string>
 </resources>
