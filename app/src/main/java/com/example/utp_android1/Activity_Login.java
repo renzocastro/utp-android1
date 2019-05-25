@@ -45,6 +45,8 @@ public class Activity_Login extends AppCompatActivity {
                 String v_current_passwd = objuser.getPassword();
                 if (v_current_passwd.equals(v_passwd)) {
                     Toast.makeText(getApplicationContext(), v_message, Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class) ;
+                    startActivityForResult(intent,0);
                 } else {
                     Toast.makeText(getApplicationContext(), "NO PASO VALIDACION.", Toast.LENGTH_SHORT).show();
                 }
