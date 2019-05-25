@@ -91,12 +91,31 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#03A9F4"
+        android:onClick="BtnCrear_Click"
         android:text="Crear nuevo usuario"
         android:textColor="#FCFFFFFF"
-        android:onClick="BtnCrear_Click"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password2"
-        app:layout_constraintVertical_bias="0.171" />/>
+        app:layout_constraintVertical_bias="0.235" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="162dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginRight="312dp"
+        android:text="Longitud Minima : 6"
+        android:textColor="#3F51B5"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password2" />/>
 </android.support.constraint.ConstraintLayout>
