@@ -3,4 +3,15 @@
     <string name="activity_login">Usuario Existente</string>
     <string name="activity_new">Nuevo Usuario</string>
     <string name="activity_welcome">El Recogedor</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_favorites">Favorites</string>
+
+    <string name="nav_header_title">Recogedor</string>
+    <string name="nav_header_subtitle">contacto@elrecogedor.com.pe</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
